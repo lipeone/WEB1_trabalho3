@@ -1,0 +1,538 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;
+}
+
+:root{
+    --backgroud: black;
+    --text-blue: #778791;
+    --color-white:#fff;
+    --files-grey: #778791;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #808080;
+}
+
+
+.container{
+    background-color: #e2e7eb;
+    width: 100%;
+    height: 97vh;
+    margin: 0 20px;
+    display: flex;
+    border-radius: 50px;  
+}
+/* container 01 ---------------------------------*/
+
+
+/* nav 01------------------------ */
+ 
+.nav-01 i{
+    font-size: 2rem;
+    color: var(--color-white);
+    padding: 10px;
+}
+
+.nav-01 li{
+    list-style: none;
+}
+
+.nav-01 #active-i{
+    color: var(--backgroud);
+    background-color: var(--color-white);
+    padding: 10px;
+    border-radius: 13px;   
+}
+
+.nav-01 i:hover{
+    color: var(--backgroud);
+    background-color: var(--color-white);
+    border-radius: 13px;
+    transition: 0.5s;
+}
+
+.nav-01{
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--backgroud);
+    height: auto;
+    border-radius: 50px 0 0 50px;
+    max-width: 0px;
+}
+
+.nav-01 .container-i{
+    margin-right: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-01 .container-i .i-01{
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+.cont-01{
+    background-color: var(--color-white);
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-left: -40px;
+    border-radius: 50px;  
+}
+
+.cont-01 .nav-02{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* air freeze -------------------------*/
+
+.nav-02 .container-nav-02 .logo{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-02 .container-nav-02 .logo .h2{
+    color: var(--text-blue);
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
+.nav-02 .container-nav-02 .logo span{
+    color: #00d4ff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cont-01 .nav-02 .container-nav-02 .logo img{
+    padding: 30px 0;
+    width: 60px;
+    border-radius: 50%;
+}
+ 
+
+/* button add --------------------------------*/
+.container-nav-02 .add{
+    margin: 20px 10px 30px 10px;
+    background-color: var(--backgroud);
+    padding: 5px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container-nav-02 span{
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.container-nav-02 .add a i{
+    margin-right: 10px;
+    font-size: 2rem;
+    color: var(--color-white);
+}
+.container-nav-02 .my-files{
+    margin: 20px 10px;
+}
+
+.container-nav-02 .my-files .li{
+    color: var(--files-grey);
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+.container-nav-02 .my-files li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.container-nav-02 .my-files li .my{
+    color: var(--text-blue);
+    font-weight: 800;
+}
+
+.container-nav-02 .my-files li a{
+    text-decoration: none;
+    color: var(--text-blue);
+}
+
+.container-nav-02 .my-files .li #folder{
+    color: var(--files-grey);
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+/* my files 02---------------- */
+
+.container-nav-02 .my-files-02 .files-02{
+    display: flex;
+    align-items: center;
+}
+
+.container-nav-02 .my-files-02{
+    margin: 0 10px;
+}
+
+.container-nav-02 .my-files-02 ul li{
+    margin: 30px 0;
+}
+
+.container-nav-02 .my-files-02 ul li i{
+    font-size: 1.4rem;
+    color: var(--files-grey);
+}
+
+.container-nav-02 .my-files-02 ul li a{
+    font-weight: 700;
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--files-grey);
+}
+
+.container-nav-02 .my-files-02 a:hover{
+    color: green;
+}
+
+.container-nav-02 .my-files-02 .off:hover{
+    color: red;
+}
+
+.container-nav-02 .my-files-02 .config:hover{
+    color: orange;
+}
+.container .cont-02{
+    margin: 0 30px;
+    max-width: 1050px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* input ---------------------------------- */
+
+.cont-02 .input input{
+    border: none;
+    width: 100%;
+    padding: 20px 60px;
+    margin: 40px 0 30px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+}
+
+.cont-02 .input{
+    position: relative;
+}
+
+.search i{
+    font-size: 2rem;
+    padding: 5px;
+    background-color: var(--backgroud);
+    border-radius: 10px;
+    color: var(--color-white);
+}
+
+.search{
+    position: absolute;
+    top: 44px;
+    left: 4px;
+}
+
+.cont-02 .h01{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: var(--text-blue);
+}
+
+.cont-02 .h01{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.cont-02 .grid-01{
+    margin: 20px 0px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.cont-02 .grid-01 .grid-child-01{
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    background-color: var(--backgroud);
+}
+
+.cont-02 .grid-01 .grid-verde{
+    background-color: var(--backgroud);
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroud);
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .imgs{
+    display: flex;
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .imgs .detalhe-img{
+    border-radius: 50%;
+    margin-left: -10px;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+    background-color: white;
+    border: 2px solid var(--backgroud);
+    font-weight: 800;
+    color: var(--backgroud);
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .imgs img{
+    margin-left: -10px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #00d4ff;
+    padding: 1px;
+    background-color: var(--color-white);
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .box-left{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cont-02 .grid-01 .grid-child-01 .box-01{
+    margin: 0 30px;
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .textos{
+    margin-top: 10px;
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .textos{
+    color: white;
+    font-size: 1rem;
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .textos .span{
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .textos .h2{
+    margin: 10px 0;
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .textos h2{
+    font-size: 1rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .textos span{
+    font-weight: 700;
+    color: var(--files-grey);
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .folder{
+    background-color: var(--color-white);
+    width: 40px;
+    height: 33px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .folder i{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    color: var(--backgroud);
+}
+
+.cont-02 .grid-01 .grid-child-01 .box-01 .imgs .border-img{
+    width: 100%;
+}
+.cont-02 .grid-02{
+    margin: 20px 0px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.cont-02 .grid-02 .grid-child-02{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-white);
+    padding: 15px;
+}
+
+.cont-02 .grid-02 .grid-child-02 .box-01{
+    display: flex;
+    width: 100%;
+}
+
+.cont-02 .grid-02 .grid-child-02 .box-01 .container-01{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cont-02 .grid-02 .grid-child-02 .box-01 .container-01 i{
+    margin-bottom: 15px;
+    font-size: 5rem;
+    color: var(--backgroud);
+}
+
+.cont-02 .grid-02 .grid-child-02 .box-01 .container-01 .files{
+    color: var(--text-blue);
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.cont-02 .grid-02 .grid-child-02 .box-01 .container-02{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cont-02 .grid-02 .grid-child-02 .two-p{
+    color: var(--text-blue);
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gigabit{
+    color: var(--text-blue);
+    font-weight: 700;
+}
+
+.files{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.cont-02 .flex-03{
+    display: flex;
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 20px;
+    overflow: auto;
+    max-height: 270px;
+}
+
+.flex-03 .flex-child-03{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.flex-03 .flex-child-03 .last{
+    align-items: flex-start;
+}
+
+.flex-03 .flex-child-03 .member{
+    align-items: center;
+}
+
+.flex-03 .flex-child-03 .pontos{
+    align-items: flex-end;
+}
+
+.flex-03 .flex-child-03 .titulo{
+    color: var(--files-grey);
+    margin: 10px 0;
+}
+
+.flex-03 .flex-child-03 .grid-02-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-03 .flex-child-03 .grid-02-flex .opacity-0{
+    opacity: 0;
+}
+
+.flex-03 .flex-child-03 .cont-mp4, .text-cont-03{
+    color: var(--text-blue);
+    padding: 20px 0px;
+    font-weight: bold;
+}
+.flex-03 .flex-child-03 .grid-02-flex .mp4{
+    margin-right: 10px;
+    background-color: green;
+    padding: 10px 7px;
+    border-radius: 5px;
+    color: var(--color-white);
+    font-size: 0.8rem;
+}
+
+.flex-03 .flex-child-03 .grid-02-flex .zip{
+    margin-right: 10px;
+    background-color: red;
+    padding: 10px 7px;
+    border-radius: 5px;
+    color: var(--color-white);
+    font-size: 0.8rem;
+}
+
+.flex-03 .flex-child-03 .grid-02-flex .pdf{
+    margin-right: 10px;
+    background-color: orange;
+    padding: 10px 7px;
+    border-radius: 5px;
+    color: var(--color-white);
+    font-size: 0.8rem;
+}
+
+
+/* barra de rolagem------------------------- */
+
+::-webkit-scrollbar{
+    background-color: white;
+    width: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
+}
